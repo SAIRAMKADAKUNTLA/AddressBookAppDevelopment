@@ -16,4 +16,11 @@ public interface IAddressBookService {
     AddressBookData updateData(int id,AddressBookDTO addressBookDTO);
 
     void deleteData(int id);
+    List<AddressBookData> getByAge(int age);
+    List<AddressBookData> getByName(String name);
+    List<AddressBookData> getByCity(String city);
+    List<AddressBookData> getByState(String state);
+    List<AddressBookData> getByZipcode(long zipcode);
+    List<AddressBookData> getByPhone_number(long phone_number);
+    List<AddressBookData> getSortByName();
 }
